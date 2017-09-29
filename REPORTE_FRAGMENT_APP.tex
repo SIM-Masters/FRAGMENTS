@@ -1,0 +1,469 @@
+
+\documentclass{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Friday, September 22, 2017 15:14:43}
+%TCIDATA{LastRevised=Friday, September 22, 2017 15:59:01}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+\input{tcilatex}
+
+\begin{document}
+
+
+\section{\protect\FRAME{ftbpF}{3.9167in}{1.0923in}{0pt}{}{}{Figure}{\special%
+{language "Scientific Word";type "GRAPHIC";maintain-aspect-ratio
+TRUE;display "USEDEF";valid_file "T";width 3.9167in;height 1.0923in;depth
+0pt;original-width 5.1526in;original-height 1.4166in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'OWP8YD05.bmp';tempfile-properties "XPR";}}}
+
+\bigskip 
+
+\section{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ SISTEMAS OPERATIVOS LINUX%
+}
+
+\bigskip 
+
+\section{ \ \ \ \ \ \ \ APLICACI\'{O}N EN ANDROID CON DOS FRAGMENTS}
+
+\bigskip 
+
+\section{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ JOS\'{E} IGNACIO NAVA
+AGUIRRE}
+
+\bigskip 
+
+\section{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ 22
+/ SEPT / 2017}
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\subsection{\protect\bigskip\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+\ \ \ \ \ \ \ \ \ \ \ \ \ DESCRIPCI\'{O}N:}
+
+\bigskip Un fragment representa un comportamiento o una parte de la interfaz
+de usuario en una Activity. Puedes combinar m\'{u}ltiples fragmentos en una
+sola actividad para crear una IU multipanel y volver a usar un fragmento en m%
+\'{u}ltiples actividades. Puedes pensar en un fragmento como una secci\'{o}n
+modular de una actividad que tiene su ciclo de vida propio, recibe sus
+propios eventos de entrada y que puedes agregar o quitar mientras la
+actividad se est\'{e} ejecutando (algo as\'{\i} como una "subactividad" que
+puedes volver a usar en diferentes actividades).
+
+\bigskip 
+
+Un fragmento siempre debe estar integrado a una actividad y el ciclo de vida
+del fragmento se ve directamente afectado por el ciclo de vida de la
+actividad anfitriona. Por ejemplo, cuando la actividad est\'{a} pausada,
+tambi\'{e}n lo est\'{a}n todos sus fragmentos, y cuando la actividad se
+destruye, lo mismo ocurre con todos los fragmentos. Sin embargo, mientras
+una actividad se est\'{a} ejecutando (est\'{a} en el estado del ciclo de
+vida reanudada ), puedes manipular cada fragmento de forma independiente;
+por ejemplo, para agregarlos o quitarlos. Cuando realizas una transacci\'{o}%
+n de fragmentos como esta, tambi\'{e}n puedes agregarlos a una pila de
+actividades administrada por la actividad; cada entrada de la pila de
+actividades en la actividad es un registro de la transacci\'{o}n de
+fragmentos realizada. La pila de actividades le permite al usuario invertir
+una transacci\'{o}n de fragmentos (navegar hacia atr\'{a}s) al presionar el
+bot\'{o}n Atr\'{a}s.
+
+\bigskip 
+
+\subsection{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ IMAGEN DEL
+ACTIVITY\_MAIN.XML}
+
+\FRAME{ftbpF}{2.7294in}{4.5299in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.7294in;height 4.5299in;depth
+0pt;original-width 5.1526in;original-height 8.5694in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'OWP8YD06.bmp';tempfile-properties "XPR";}}
+
+\bigskip 
+
+\bigskip \TEXTsymbol{<}?xml version="1.0" encoding="utf-8"?\TEXTsymbol{>}
+
+\TEXTsymbol{<}LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:app="http://schemas.android.com/apk/res-auto"
+
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="match\_parent"
+
+android:paddingLeft="16dp"
+
+android:paddingRight="16dp"
+
+android:paddingBottom="16dp"
+
+tools:context=".MainActivity"
+
+android:orientation="vertical"\TEXTsymbol{>}
+
+\TEXTsymbol{<}Button
+
+android:layout\_width="250dp"
+
+android:layout\_height="wrap\_content"
+
+android:text="LOAD FIRST FRAGMENT"
+
+android:id="@+id/bn"
+
+android:layout\_gravity="center\_horizontal"
+
+/\TEXTsymbol{>}
+
+\TEXTsymbol{<}RelativeLayout
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="400dp"
+
+android:layout\_marginTop="20dp"
+
+android:id="@+id/fragment\_container"
+
+/\TEXTsymbol{>}
+
+\TEXTsymbol{<}/LinearLayout\TEXTsymbol{>}
+
+\subsection{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+FRAGMENT\_ONE\_LAYOUT.XML}
+
+\FRAME{ftbpF}{2.5382in}{4.19in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5382in;height 4.19in;depth
+0pt;original-width 5.1802in;original-height 8.5694in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'OWP8YD07.bmp';tempfile-properties "XPR";}}
+
+\bigskip 
+
+\TEXTsymbol{<}FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="match\_parent"
+
+tools:context="com.example.uidp2591.fragment.FragmentOne"
+
+android:background="\#077751"\TEXTsymbol{>}
+
+\TEXTsymbol{<}TextView
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="wrap\_content"
+
+android:text="Welcome to fragment One"
+
+android:textAppearance="?android:textAppearanceLarge"
+
+android:layout\_gravity="center"
+
+android:gravity="center"
+
+/\TEXTsymbol{>}
+
+\TEXTsymbol{<}/FrameLayout\TEXTsymbol{>}
+
+\bigskip 
+
+\subsection{\protect\bigskip\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \
+FRAGMENT\_TWO\_LAYOUT.XML}
+
+\FRAME{ftbpF}{2.5867in}{4.2739in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.5867in;height 4.2739in;depth
+0pt;original-width 5.1664in;original-height 8.5556in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'OWP8YD08.bmp';tempfile-properties "XPR";}}
+
+\bigskip 
+
+\TEXTsymbol{<}FrameLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="match\_parent"
+
+tools:context="com.example.uidp2591.fragment.FragmentTwo"
+
+android:background="\#8f3a1e"\TEXTsymbol{>}
+
+\TEXTsymbol{<}TextView
+
+android:layout\_width="match\_parent"
+
+android:layout\_height="wrap\_content"
+
+android:text="Welcome to fragment Two"
+
+android:textAppearance="?android:textAppearanceLarge"
+
+android:layout\_gravity="center"
+
+android:gravity="center"
+
+/\TEXTsymbol{>}
+
+\TEXTsymbol{<}/FrameLayout\TEXTsymbol{>}
+
+\bigskip 
+
+\bigskip 
+
+\subsection{\protect\bigskip FragmentTwo.java}
+
+package com.example.uidp2591.fragment;
+
+import android.os.Bundle;
+
+import android.support.v4.app.Fragment;
+
+import android.view.LayoutInflater;
+
+import android.view.View;
+
+import android.view.ViewGroup;
+
+/**
+
+* A simple \{@link Fragment\} subclass.
+
+*/
+
+public class FragmentTwo extends Fragment \{
+
+public FragmentTwo() \{
+
+// Required empty public constructor
+
+\}
+
+@Override
+
+public View onCreateView(LayoutInflater inflater, ViewGroup container,
+
+Bundle savedInstanceState) \{
+
+// Inflate the layout for this fragment
+
+return inflater.inflate(R.layout.fragment\_two\_layout, container, false);
+
+\}
+
+\}
+
+\bigskip 
+
+\subsection{FragmentOne.java}
+
+package com.example.uidp2591.fragment;
+
+import android.os.Bundle;
+
+import android.support.v4.app.Fragment;
+
+import android.view.LayoutInflater;
+
+import android.view.View;
+
+import android.view.ViewGroup;
+
+/**
+
+* A simple \{@link Fragment\} subclass.
+
+*/
+
+public class FragmentOne extends Fragment \{
+
+public FragmentOne() \{
+
+// Required empty public constructor
+
+\}
+
+@Override
+
+public View onCreateView(LayoutInflater inflater, ViewGroup container,
+
+Bundle savedInstanceState) \{
+
+// Inflate the layout for this fragment
+
+return inflater.inflate(R.layout.fragment\_one\_layout, container, false);
+
+\}
+
+\}
+
+\bigskip 
+
+\bigskip 
+
+\subsection{MainActivity.java}
+
+\bigskip 
+
+import android.app.Fragment;
+
+//import android.app.FragmentManager;
+
+//import android.app.FragmentTransaction;
+
+import android.support.v4.app.FragmentManager;
+
+import android.support.v4.app.FragmentTransaction;
+
+import android.support.v7.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+import android.view.View;
+
+import android.widget.Button;
+
+import static com.example.uidp2591.fragment.R.id.fragment\_container;
+
+public class MainActivity extends AppCompatActivity \{
+
+boolean status = false;
+
+Button bn;
+
+@Override
+
+protected void onCreate(Bundle savedInstanceState) \{
+
+super.onCreate(savedInstanceState);
+
+setContentView(R.layout.activity\_main);
+
+bn = (Button)findViewById(R.id.bn);
+
+bn.setOnClickListener(new View.OnClickListener()\{
+
+@Override
+
+public void onClick(View v) \{
+
+FragmentManager fragmentManager = getSupportFragmentManager();
+
+FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+if(!status)
+
+\{
+
+FragmentOne f1 = new FragmentOne();
+
+fragmentTransaction.add(R.id.fragment\_container, f1);
+
+fragmentTransaction.addToBackStack(null);
+
+fragmentTransaction.commit();
+
+bn.setText("LOAD SECOND FRAGMENT");
+
+status = true;
+
+\}
+
+else
+
+\{
+
+FragmentTwo f2 = new FragmentTwo();
+
+fragmentTransaction.add(R.id.fragment\_container,f2);
+
+fragmentTransaction.addToBackStack(null);
+
+fragmentTransaction.commit();
+
+bn.setText("LOAD FIRST FRAGMENT");
+
+status = false;
+
+\}
+
+\}
+
+\});
+
+\}
+
+\}
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\bigskip 
+
+\end{document}
